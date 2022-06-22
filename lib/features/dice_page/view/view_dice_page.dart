@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:rpg/core/constants/images_strings.dart';
 import 'package:rpg/core/widgets/custom_row.dart';
-import '../myapp/info.dart';
+import '../../info_page/view/info.dart';
 
 class ViewHomeDice extends StatelessWidget {
   const ViewHomeDice({Key? key}) : super(key: key);
@@ -17,53 +18,43 @@ class ViewHomeDice extends StatelessWidget {
         ),
       ),
       child: Scaffold(
-        appBar: AppBar(
-          toolbarHeight: 150,
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          centerTitle: true,
-          title: const Image(
-            image: AssetImage("assets/images/date.png"),
-            height: 150,
-            width: 150,
-          ),
-        ),
         backgroundColor: Colors.transparent,
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: SingleChildScrollView(
             child: Center(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const CustomRow(
+                   CustomRow(
                     diceName1: 'D4',
                     diceMinNumber1: 1,
                     diceMaxNumber1: 5,
                     diceName2: 'D6',
                     diceMinNumber2: 1,
                     diceMaxNumber2: 7,
-                    diceImage1: 'assets/images/dice1.png',
-                    diceImage2: 'assets/images/dice1.png',
+                    diceImage1: ImagesStrings.dice20,
+                    diceImage2: ImagesStrings.dice20,
                   ),
-                  const CustomRow(
+                   CustomRow(
                     diceName1: 'D8',
                     diceMinNumber1: 1,
                     diceMaxNumber1: 9,
                     diceName2: 'D10',
                     diceMinNumber2: 1,
                     diceMaxNumber2: 11,
-                    diceImage1: 'assets/images/dice1.png',
-                    diceImage2: 'assets/images/dice1.png',
+                    diceImage1: ImagesStrings.dice20,
+                    diceImage2: ImagesStrings.dice20,
                   ),
-                  const CustomRow(
+                   CustomRow(
                     diceName1: 'D12',
                     diceMinNumber1: 1,
                     diceMaxNumber1: 13,
                     diceName2: 'D20',
                     diceMinNumber2: 1,
                     diceMaxNumber2: 21,
-                    diceImage1: 'assets/images/dice1.png',
-                    diceImage2: 'assets/images/dice1.png',
+                    diceImage1: ImagesStrings.dice20,
+                    diceImage2: ImagesStrings.dice20,
                   ),
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     IconButton(

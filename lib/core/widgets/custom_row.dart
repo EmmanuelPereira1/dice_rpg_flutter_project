@@ -36,11 +36,12 @@ class CustomRow extends StatelessWidget {
                 primary: const Color.fromARGB(0, 155, 39, 176)),
             child: Stack(children: [
               Image(image: AssetImage(diceImage1)),
+             
               Text(
                 diceName1,
                 style: const TextStyle(
                   color: Color(0xFFBF6836),
-                  fontSize: 15,
+                  fontSize: 17,
                 ),
               ),
             ]),
@@ -63,7 +64,7 @@ class CustomRow extends StatelessWidget {
                       ));
             }),
         const SizedBox(
-          width: 70,
+          width: 30,
         ),
         ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -76,7 +77,7 @@ class CustomRow extends StatelessWidget {
                 diceName2,
                 style: const TextStyle(
                   color: Color(0xFFBF6836),
-                  fontSize: 15,
+                  fontSize: 17,
                 ),
               ),
             ]),
