@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:rpg/myapp/dices.dart';
+import 'package:rpg/features/dice_page/view/view_dice_page.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -7,8 +7,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const ViewHomeDice(),
+    return const MaterialApp(
+      home: ViewHomeDice(),
     );
   }
 }
