@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:rpg/core/constants/color_app.dart';
 
 class CustomRow extends StatelessWidget {
   final int diceMinNumber1;
@@ -33,14 +34,14 @@ class CustomRow extends StatelessWidget {
             style: ElevatedButton.styleFrom(
                 elevation: 0,
                 fixedSize: const Size(130, 130),
-                primary: const Color.fromARGB(0, 155, 39, 176)),
+                primary: Colors.transparent),
             child: Stack(children: [
               Image(image: AssetImage(diceImage1)),
              
               Text(
                 diceName1,
-                style: const TextStyle(
-                  color: Color(0xFFBF6836),
+                style:  TextStyle(
+                  color: ColorApp.colorIcons,
                   fontSize: 17,
                 ),
               ),
@@ -49,16 +50,26 @@ class CustomRow extends StatelessWidget {
               showDialog(
                   context: context,
                   builder: (context) => AlertDialog(
-                        title: const Text('Result'),
+                        backgroundColor: ColorApp.background,
+                        title: Text('Result',
+                        style: TextStyle(
+                          color: ColorApp.colorIcons,
+                        ),),
                         content: Text(
                           diceNumbers1(),
-                          style: const TextStyle(fontSize: 70),
+                          style: TextStyle(
+                            fontSize: 70,
+                            color: ColorApp.colorIcons),
                           textAlign: TextAlign.center,
                         ),
                         actions: [
                           TextButton(
                             onPressed: () => Navigator.pop(context),
-                            child: const Text('OK'),
+                            child:  Text('OK',
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: ColorApp.teste2,
+                            ),),
                           )
                         ],
                       ));
@@ -70,13 +81,13 @@ class CustomRow extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               elevation: 0,
                 fixedSize: const Size(130, 130),
-                primary: const Color.fromARGB(0, 155, 39, 176)),
+                primary: Colors.transparent),
             child: Stack(children: [
               Image(image: AssetImage(diceImage2)),
               Text(
                 diceName2,
-                style: const TextStyle(
-                  color: Color(0xFFBF6836),
+                style: TextStyle(
+                  color: ColorApp.colorIcons,
                   fontSize: 17,
                 ),
               ),
@@ -85,16 +96,26 @@ class CustomRow extends StatelessWidget {
               showDialog(
                   context: context,
                   builder: (context) => AlertDialog(
-                        title: const Text('Result'),
+                    backgroundColor: ColorApp.background,
+                        title: Text('Result',
+                        style: TextStyle(
+                          color: ColorApp.colorIcons,
+                        ),),
                         content: Text(
                           diceNumbers2(),
-                          style: const TextStyle(fontSize: 70),
+                          style: TextStyle(
+                          fontSize: 70,
+                          color: ColorApp.colorIcons),
                           textAlign: TextAlign.center,
                         ),
                         actions: [
                           TextButton(
                             onPressed: () => Navigator.pop(context),
-                            child: const Text('OK'),
+                            child: Text('OK',
+                            style: TextStyle(
+                              fontSize: 17,
+                              color: ColorApp.teste2,
+                            ),),
                           )
                         ],
                       ));
