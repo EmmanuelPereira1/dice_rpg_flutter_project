@@ -9,11 +9,11 @@ class ViewHomeDice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const BoxDecoration(
-        color: Color.fromARGB(255, 255, 224, 137),
+      decoration: BoxDecoration(
+        color: const Color.fromARGB(255, 255, 224, 137),
         image: DecorationImage(
-          opacity: 0.2,
-          image: AssetImage("assets/images/wall.png"),
+          opacity: 0.3,
+          image: AssetImage(ImagesStrings.background),
           fit: BoxFit.fill,
         ),
       ),
