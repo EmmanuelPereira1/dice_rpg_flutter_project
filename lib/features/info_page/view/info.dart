@@ -10,8 +10,8 @@ const longString = 'Um aplicativo simples de dados de RPG, '
     'Nome de jogo (Toninho ou Peranuel) ';
 
 
-class Info extends StatelessWidget {
-  const Info ({ Key? key }) : super(key: key);
+class ViewInfoPage extends StatelessWidget {
+  const ViewInfoPage ({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

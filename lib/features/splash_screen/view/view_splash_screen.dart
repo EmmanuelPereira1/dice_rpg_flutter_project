@@ -4,14 +4,14 @@ import 'package:lottie/lottie.dart';
 import 'package:rpg/core/constants/images_strings.dart';
 import 'package:rpg/features/splash_screen/controller/controller_splash_screen.dart';
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({Key? key}) : super(key: key);
+class ViewSplashScreen extends StatefulWidget {
+  const ViewSplashScreen({Key? key}) : super(key: key);
 
   @override
-  State<MyWidget> createState() => _MyWidgetState();
+  State<ViewSplashScreen> createState() => _ViewSplashScreenState();
 }
 
-class _MyWidgetState extends State<MyWidget> {
+class _ViewSplashScreenState extends State<ViewSplashScreen> {
   final _controller = SplashScreenController();
 
   @override
@@ -22,6 +22,7 @@ class _MyWidgetState extends State<MyWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 255, 224, 137),
       body: Center(
         child: Observer(builder: (_) {
           _controller.checkTokenValid(context);
