@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:rpg/core/constants/images_strings.dart';
 import 'package:rpg/core/widgets/custom_row.dart';
-import '../../info_page/view/info.dart';
 
 class ViewHomeDice extends StatelessWidget {
   const ViewHomeDice({Key? key}) : super(key: key);
@@ -33,8 +33,8 @@ class ViewHomeDice extends StatelessWidget {
                     diceName2: 'D6',
                     diceMinNumber2: 1,
                     diceMaxNumber2: 7,
-                    diceImage1: ImagesStrings.dice20,
-                    diceImage2: ImagesStrings.dice20,
+                    diceImage1: ImagesStrings.dice4,
+                    diceImage2: ImagesStrings.dice6,
                   ),
                    CustomRow(
                     diceName1: 'D8',
@@ -43,8 +43,8 @@ class ViewHomeDice extends StatelessWidget {
                     diceName2: 'D10',
                     diceMinNumber2: 1,
                     diceMaxNumber2: 11,
-                    diceImage1: ImagesStrings.dice20,
-                    diceImage2: ImagesStrings.dice20,
+                    diceImage1: ImagesStrings.dice8,
+                    diceImage2: ImagesStrings.dice10,
                   ),
                    CustomRow(
                     diceName1: 'D12',
@@ -53,16 +53,13 @@ class ViewHomeDice extends StatelessWidget {
                     diceName2: 'D20',
                     diceMinNumber2: 1,
                     diceMaxNumber2: 21,
-                    diceImage1: ImagesStrings.dice20,
+                    diceImage1: ImagesStrings.dice12,
                     diceImage2: ImagesStrings.dice20,
                   ),
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     IconButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const Info()));
+                        Modular.to.pushNamed('/infopage/');
                       },
                       icon: const Icon(Icons.info_outline,
                       color: Color(0xFFBF6836),),

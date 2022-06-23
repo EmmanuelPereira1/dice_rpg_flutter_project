@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:rpg/features/dice_page/view/view_dice_page.dart';
-
+import 'package:flutter_modular/flutter_modular.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: ViewHomeDice(),
+    return MaterialApp.router(
+      routeInformationParser: Modular.routeInformationParser,
+      routerDelegate: Modular.routerDelegate,
     );
   }
 }
-
-
-
