@@ -24,5 +24,5 @@ This project was developed using:
 To download this project and make changes, you can use the script bellow:
 
 ```
-git clone https://github.com/EmmanuelPereira1/dice_rpg_flutter_project
+git clone https://github.com/EmmanuelPereira1/dice_rpg_flutter_project.git
 ```
