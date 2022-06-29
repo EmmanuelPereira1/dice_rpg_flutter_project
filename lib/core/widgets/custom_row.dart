@@ -28,7 +28,6 @@ class CustomRow extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-//D4
 
         ElevatedButton(
             style: ElevatedButton.styleFrom(
@@ -124,6 +123,10 @@ class CustomRow extends StatelessWidget {
     );
   }
 
+  /// diceNumbers1() is a function that returns a random number between 1 and 6
+  /// 
+  /// Returns:
+  ///   A random number between 1 and 6.
   String diceNumbers1() {
     int random(min, max) {
       return min + Random().nextInt(max - min);

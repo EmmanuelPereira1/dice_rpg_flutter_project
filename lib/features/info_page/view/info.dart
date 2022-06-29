@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-const longString = 'Um aplicativo simples de dados de RPG, '
-    'para viver as melhores aventuras sejam nos livros '
-    'de D&D ou outro uma ótima maneira de se divertir com '
-    'os amigos. '
+const longString = 'A simple RPG dice app, '
+    'to live the best adventures are in books '
+    'from D&D or other a great way to have fun with '
+    'the friends. '
     ' '
-    'Desenvolvido por Emmanuel Pereira '
-    'Nome de jogo (Toninho ou Peranuel) ';
-
+    'Developed by Emmanuel Pereira ';
 
 class ViewInfoPage extends StatelessWidget {
   const ViewInfoPage ({ Key? key }) : super(key: key);
@@ -22,7 +20,8 @@ class ViewInfoPage extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-        Text(longString,
+        Text(
+          longString,
         style: TextStyle(fontSize: 30,
           color: Colors.white,
             fontFamily: GoogleFonts.roboto().fontFamily,
@@ -33,7 +32,9 @@ class ViewInfoPage extends StatelessWidget {
           )),
       padding: EdgeInsets.zero,
       decoration: const BoxDecoration(
-        image:  DecorationImage(image: NetworkImage("https://c.tenor.com/jWhi_6_kVEYAAAAC/dark-souls.gif"),
+        image:  
+        DecorationImage(
+          image: NetworkImage("https://c.tenor.com/jWhi_6_kVEYAAAAC/dark-souls.gif"),
         fit: BoxFit.fill,
         ),
       ),
